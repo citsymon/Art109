@@ -74,10 +74,29 @@ footer a:hover {
     display: block;
     height: 600px;
 }
+.resumesect {
+    margin-bottom: 50px;
+}
+.resumesect h2 {
+    border-bottom: 2px dashed #d3d4d6;
+}
+.downloadlink {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
 
 /* profile
 -----------------*/
-
+.projectitem {
+    display: flow-root;
+    margin: 30px 0;
+}
+.projectitem img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
 /* projects
 -----------------*/
 
