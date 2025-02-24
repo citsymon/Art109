@@ -61,9 +61,15 @@ footer a:hover {
 .home {
     background: url(../img/hdr-b.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 .home .content-wrapper {
+    flex: 1 0 auto;
+}
+.contentbg {
     background: rgb(235 235 235 / 0.9);
+    padding: 30px;
 }
 /* resume
 -----------------*/
@@ -100,6 +106,19 @@ footer a:hover {
 /* projects
 -----------------*/
 
+/* Work Experience
+-----------------*/
+.workitem {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
+.workinfo {
+
+}
+.worksum {
+
+}
 /* education
 -----------------*/
 
@@ -108,6 +127,9 @@ footer a:hover {
 footer {
     background: #222;
     color: #d3d4d6;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 .socials {
     list-style-type: none;
@@ -115,7 +137,11 @@ footer {
 }
 .socials li {
     display: inline-block;
+    margin-left: 10px;
 }
 .socials img {
     width: 32px;
+}
+.socials img:hover {
+    opacity: 0.5;
 }
