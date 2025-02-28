@@ -6,7 +6,7 @@
     <title>Resume | Tim Wong Portfolio Site Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="resume">
@@ -40,36 +40,37 @@
         <p>Things I've made or worked on.</p>
 
         <!-- To add more items, copy this whole <section></section> block-->
-        <section class="projectitem">
-          <img src="img/project-final-03-01-500px.png" srcset="img/project-final-03-01-1000px.png 2x" alt="'Detritus and Drain' project" width="" height="">
-          <h3>'Detritus and Drain' Project</h3>
-          <p>Adobe Illustrator. Project created about the exploration of personal interests.</p>
-          <!-- link to project -->
-          <a class="btn" target="_blank">Link</a>
-          <!-- additional links, e.g. newsletter -->
-          <a class="btn" target="_blank">Another link</a>
-        </section>
+        <div class="project-wrapper">
+          <section class="projectitem">
+            <img src="img/project-final-03-01-500px.png" srcset="img/project-final-03-01-1000px.png 2x" alt="'Detritus and Drain' project" width="" height="">
+            <h3>'Detritus and Drain' Project</h3>
+            <p>Adobe Illustrator. Project created about the exploration of personal interests.</p>
+            <!-- link to project -->
+            <a class="btn" target="_blank">Link</a>
+            <!-- additional links, e.g. newsletter -->
+            <a class="btn" target="_blank">Another link</a>
+          </section>
 
-        <section class="projectitem">
-          <img src="img/TimWong_Final-2-500px.png" srcset="img/TimWong_Final-2-1000px.png 2x" alt="Liminal HDR photograph" width="" height="">
-          <h3>HDR photography</h3>
-          <p>Sample of HDR photos I've produced for a project. From a collection of places I know distorted into the surreal and liminal in post processing</p>
-          <!-- link to project -->
-          <a href="#" target="_blank">Link</a>
-          <!-- additional links, e.g. newsletter -->
-          <a href="#" target="_blank">Another link</a>
-        </section>
+          <section class="projectitem">
+            <img src="img/TimWong_Final-2-500px.png" srcset="img/TimWong_Final-2-1000px.png 2x" alt="Liminal HDR photograph" width="" height="">
+            <h3>HDR photography</h3>
+            <p>Sample of HDR photos I've produced for a project. From a collection of places I know distorted into the surreal and liminal in post processing</p>
+            <!-- link to project -->
+            <a class="btn" target="_blank">Link</a>
+            <!-- additional links, e.g. newsletter -->
+            <a class="btn" target="_blank">Another link</a>
+          </section>
 
-        <section class="projectitem">
-          <img src="img/ProjectPIV-500px.png" srcset="img/ProjectPIV-1000px.png 2x" alt="'Panzer IV' Project" width="" height="">
-          <h3>Panzer IV</h3>
-          <p>Adobe Illustrator. 2D reproduction of an 'unusual' vehicle. </p>
-          <!-- link to project -->
-          <a href="#" target="_blank">Link</a>
-          <!-- additional links, e.g. newsletter -->
-          <a href="#" target="_blank">Another link</a>
-        </section>
-        
+          <section class="projectitem">
+            <img src="img/ProjectPIV-500px.png" srcset="img/ProjectPIV-1000px.png 2x" alt="'Panzer IV' Project" width="" height="">
+            <h3>Panzer IV</h3>
+            <p>Adobe Illustrator. 2D reproduction of an 'unusual' vehicle. </p>
+            <!-- link to project -->
+            <a class="btn" target="_blank">Link</a>
+            <!-- additional links, e.g. newsletter -->
+            <a class="btn" target="_blank">Another link</a>
+          </section>
+        </div>
         <!-- End content edits here. -->
       </section>
 
@@ -146,11 +147,12 @@
         <h2>Education</h2>
 
         <!-- To add more items, copy this whole <section></section> block -->
-        <section>
+        <section class="eduitem">
           <h3>De Anza College - Cupertino, CA</h3>
           <p>Associates Degree</p>
         </section>
-        <section>
+
+        <section class="eduitem">
           <h3>San Jose State University - San Jose, CA</h3>
           <p>Currently Enrolled</p>
         </section>
