@@ -31,6 +31,8 @@ html {
      font-size: 1.6rem;
     /* font-size 1.6rem is now the same as 16px */
     line-height: 1.6;
+    background-color: black;
+    color: aquamarine;
  }
 
  header {
@@ -46,3 +48,48 @@ html {
  p {
     margin-top: 20px;
  }
+ .image-div{
+    display: inline-block;
+ }
+
+.hidden {
+    visibility: hidden;
+}
+
+ #img1 {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+ }
+ #img2 {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+ }
+ #img3 {
+    position: absolute;
+    top: 300px;
+    left: 60px;
+ }
+ #img4 {
+    position: absolute;
+    top: 400px;
+    right: 60px;
+ }
+ #img5 {
+    position: absolute;
+    top: 500px;
+    left: 60px;
+ }
+ #img6 {
+    position: absolute;
+    top: 600px;
+    right: 60px;
+ }
+ #img7 {
+    position: absolute;
+    top: 750px;
+    left: 60px;
+ }
+
+ 
