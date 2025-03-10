@@ -1,0 +1,210 @@
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+
+.colorrepository {
+    color:#999999, #777777, #555555, #42a79f, #307771; 
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+    font-family: sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.bg {
+    background-color: #00283f;
+    background-size: cover;
+}
+/* header */
+
+header {
+    background: linear-gradient(#999999,#777777,#555555);
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.header-wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    width: 960px;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 24px;
+}
+.search {
+    resize: none;
+    height: fit-content;
+}
+.searchbtn {
+    background-color: #ffffff;
+    color: #555555;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.0rem;
+    display: inline-block;
+    padding: 2px;
+    letter-spacing: .08em;
+    line-height: 1.5;
+}
+@media screen and (max-width:969px){
+    .header-wrapper {
+        width: 100%;
+    }
+}
+/*
+@media screen and (min-width:800px){
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:799px){
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+}
+*/
+
+
+/* body */
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    height: 100%;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+/* content */
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 0px 0px 0px;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.content {
+    background: rgb(235 235 235 / 0.9);
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content-item {
+    width: 33%;
+    padding: 0 10px 10px 10px;
+}
+.content-item p {
+    margin: 0;
+}
+.content-item h3 {
+    display: inline;
+}
+.content-item img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width:680px) and (max-width:969px){
+    .content-item {
+        width: 50%;
+    }
+}
+@media screen and (max-width:679px){
+    .content-item {
+        width: 100%;
+    }
+}
+
+.thumb {
+    background-color: black;
+    width: 216px;
+    height: 160px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:969px){
+    .thumb {
+        display: block;
+    }
+}
+/* sidebar */
+
+.side {
+    padding: 20px;
+    background: #555555;
+    color: #ffffff;
+    min-width: 200px;
+}
+.side a {
+    margin: 6px;
+}
+.btn {
+    background: linear-gradient(#42a79f, #307771);
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.6rem;
+    display: block;
+    padding: 6px;
+    letter-spacing: .08em;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+.btn2 {
+    background: linear-gradient(#42a79f, #307771);
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.6rem;
+    display: block;
+    padding: 6px;
+    letter-spacing: .08em;
+    line-height: 1.5;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px #00283f;
+}
+
+/*
+.adbar {
+    background-color: black;
+    width: 144px;
+    height: 600px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+} */
+
+/* footer */
