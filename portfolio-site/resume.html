@@ -3,14 +3,35 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume | Tim Wong Portfolio Site Project</title>
+    <title>Tim Wong | Digital Artist | Resume</title>
+    <meta name="description" content="Tim Wong is a digital artist exploring graphic design, digital illustration, game design, and photography.">
+    <meta name="keywords" content="Tim Wong, Digital Artist, Graphic Design, Adobe">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="resume">
-    <a class="btn downloadlink" href="#">Download PDF</a>
+
+    <!-- navigation -->
+    <nav class="navbar">
+      <div class="logo">
+          <a href="#">Tim Wong</a>
+      </div>
+      <ul class="nav-links">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#" class="active">Resume</a></li>
+      </ul>
+      <div class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- <a class="btn downloadlink" href="#">Download PDF</a> -->
+
     <!-- //  INTRO  // -->
     <header>
       <!-- Start content edits below this line. -->
@@ -28,51 +49,13 @@
         <!-- Start content edits below this line. -->
         <h2>Profile</h2>
         <p>I originaly started higher education in the graphic design department at De Anza before transfering to SJSU, where I was placed in their Digital Media Art program. I have a general amount of experience with Adobe's standard suite of products (photoshop, illustrator, etc.) and have also dabbled in video production and photography.</p>
-        <a href="index.html">Back to homepage</a>
+        <!-- <a href="index.html">Back to homepage</a> -->
 
         <!-- End content edits here. -->
       </section>
 
-      <!-- //  PROJECTS  // -->
-      <section class="resumesect">
-        <!-- Start content edits below this line. -->
-        <h2>Projects</h2>
-        <p>Things I've made or worked on.</p>
 
-        <!-- To add more items, copy this whole <section></section> block-->
-        <div class="project-wrapper">
-          <section class="projectitem">
-            <img src="img/project-final-03-01-500px.png" srcset="img/project-final-03-01-1000px.png 2x" alt="'Detritus and Drain' project" width="" height="">
-            <h3>'Detritus and Drain' Project</h3>
-            <p>Adobe Illustrator. Project created about the exploration of personal interests.</p>
-            <!-- link to project -->
-            <a class="btn" target="_blank">Link</a>
-            <!-- additional links, e.g. newsletter -->
-            <a class="btn" target="_blank">Another link</a>
-          </section>
-
-          <section class="projectitem">
-            <img src="img/TimWong_Final-2-500px.png" srcset="img/TimWong_Final-2-1000px.png 2x" alt="Liminal HDR photograph" width="" height="">
-            <h3>HDR photography</h3>
-            <p>Sample of HDR photos I've produced for a project. From a collection of places I know distorted into the surreal and liminal in post processing</p>
-            <!-- link to project -->
-            <a class="btn" target="_blank">Link</a>
-            <!-- additional links, e.g. newsletter -->
-            <a class="btn" target="_blank">Another link</a>
-          </section>
-
-          <section class="projectitem">
-            <img src="img/ProjectPIV-500px.png" srcset="img/ProjectPIV-1000px.png 2x" alt="'Panzer IV' Project" width="" height="">
-            <h3>Panzer IV</h3>
-            <p>Adobe Illustrator. 2D reproduction of an 'unusual' vehicle. </p>
-            <!-- link to project -->
-            <a class="btn" target="_blank">Link</a>
-            <!-- additional links, e.g. newsletter -->
-            <a class="btn" target="_blank">Another link</a>
-          </section>
-        </div>
-        <!-- End content edits here. -->
-      </section>
+      
 
       <!-- //  WORK EXPERIENCE  // -->
       <section class="resumesect">
@@ -187,5 +170,6 @@
       
       <!-- End content edits here. -->
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
