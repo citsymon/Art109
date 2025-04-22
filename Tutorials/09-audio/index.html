@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Audio API</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@v0.174.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.174.0/examples/jsm/"
+            }
+        }
+
+    </script>
+
+    <script type="module" src="js/main.js"></script>
+
+</head>
+<body>
+    <header>
+        <p>Geostrophic Wind ~ cheshyre</p>
+        <button id="play-button">Play</button>
+        <button id="pause-button">Pause</button>
+        <input type="range" id="volume-control" min="0" max="100" value="80">
+    </header>
+    <audio id="song" src="media/1248892_Geostrophic-Wind.mp3"></audio>
+    <audio id="sfx" src="media/impact.mp3"></audio>
+    <script src="js/sound.js"></script>
+</body>
+</html>
