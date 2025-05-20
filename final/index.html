@@ -114,9 +114,10 @@
         }
         uniform float u_frequency;
         uniform float u_time;
+        uniform float u_amplitude;
 
         void main() {
-            float noise = 3. * pnoise(position + u_time, vec3(10.));
+            float noise = u_amplitude * pnoise(position + u_time, vec3(10.));
             float displacement = (u_frequency / 30.) * (noise / 10.);
             vec3 newPosition = position + normal * displacement;
             gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);
@@ -137,14 +138,22 @@
 
     <header>
     </header>
-    <audio controls>
+
+    <div id="content">
+        <input type="file" id="inputFile" accept="audio/*" hidden/>
+        <label for="inputFile">Upload Audio File</label>
+        <span id="fileChosen">. . .</span>
+        <audio id="audio" controls></audio>
+    </div>
+    
+    <!-- < OLD audio controls> -->
         <!-- <source id="audiofile" src="media/01 - Can't look away.mp3"> -->
         <!-- <source id="audiofile" src="media/02 - Crumbling.mp3"> -->
         <!-- <source id="audiofile" src="media/03. You're the love of my life....mp3"> -->
         <!-- <source id="audiofile" src="media/13.Hazy Rain(MZC The 3rd Vision's House Mix).mp3"> -->
-        <source id="audiofile" src="media/14.Brilliant World(MZC Highwire Rages Club Mix).mp3">
+        <!-- <source id="audiofile" src="media/14.Brilliant World(MZC Highwire Rages Club Mix).mp3"> -->
         <!-- <source id="audiofile" src="media/1248892_Geostrophic-Wind.mp3"> -->
-    </audio>
+    <!-- </audio> -->
     <!-- <script src="js/sound.js"></script> -->
 </body>
 </html>

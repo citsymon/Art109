@@ -3,10 +3,10 @@ p {
 }
 
 audio {
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
-  width: calc(100% - 20px);
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: calc(100% - 20px);
 }
 canvas {
     position: absolute;
@@ -15,6 +15,29 @@ canvas {
     z-index: -1;
 }
 
-#play-button {
-    visibility: hidden;
+label {
+    color: whitesmoke;
+    background: rgb(25, 25, 25);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    bottom: 50px;
+    padding: 12px;
+    padding-right: 24px;
+    opacity: 80%;
+}
+label:hover {
+    background: dodgerblue;
+    color: black;
+}
+span {
+    color: whitesmoke;
+    background: rgb(25, 25, 25);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    left: 172px;
+    bottom: 50px;
+    padding: 12px;
+    opacity: 80%;
 }
